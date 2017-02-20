@@ -1,0 +1,26 @@
+
+<div class="form-group">
+      <div>
+            <h1>
+            <input [(ngModel)]="filter"  style="border-radius: 0;"  type="search" class="form-control input-lg" placeholder="Search a course!">
+            </h1></div>
+</div>
+
+<table class="table table-hover">
+      <thead>
+            <tr>
+                  <th>Name</th>
+                  <th>Professor</th>
+                  <th>Major</th>
+                  <th>Concentration</th>
+            </tr>
+      </thead>
+      <tbody>
+            <tr *ngFor="let course of courses | async | courseFilter:filter">
+                  <td>{{course.name}}</td>
+                  <td>{{course.professor}}</td>
+                  <td>{{course.major}}</td>
+                  <td>{{course.concentrationField}}</td>
+            </tr>
+      </tbody>
+</table>

@@ -1,8 +1,17 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
     <a class="navbar-brand" href="#">Yonsei GSIS</a>
     <ul class="nav navbar-nav">
         <li class="active">
             <a href="#">Home</a>
+        </li>
+        <li class="active">
+            <a [routerLink]="['courses']">Courses</a>
+        </li>
+        <li class="active">
+            <a [routerLink]="['courses-add']">Add Course</a>
+        </li>
+        <li class="active">
+            <a [routerLink]="['professors']">Professors</a>
         </li>
     </ul>
 </nav>

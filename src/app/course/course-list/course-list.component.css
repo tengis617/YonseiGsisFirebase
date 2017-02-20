@@ -1,0 +1,10 @@
+.thumbnail {
+    min-height: 210px;
+}
+.thumbnail:hover{
+    background-color:#6189b2;
+    cursor: pointer;
+}
+.pad-left {
+    margin-left: 10px;
+}
